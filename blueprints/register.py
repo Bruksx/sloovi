@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from ..models.validation import create_user
+from models.validation import create_user
 
 HTTP_METHODS = ['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'TRACE', 'PATCH', 'VIEW', 'COPY', 'LINK', 'UNLINK', 'PURGE', 'LOCK', 'UNLOCK', 'PROPFIND']
 

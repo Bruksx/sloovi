@@ -1,7 +1,6 @@
-from logging import exception
 from flask import Blueprint, make_response, request, jsonify
-from ..auth.auth import Token
-from ..models.models import Template
+from auth.auth import Token
+from models.models import Template
 from mongoengine.errors import ValidationError
 
 bp = Blueprint("template", __name__, url_prefix="/template")
