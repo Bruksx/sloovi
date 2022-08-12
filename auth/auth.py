@@ -2,7 +2,7 @@ import jwt
 from flask import request, jsonify
 from dotenv import load_dotenv, dotenv_values
 from functools import wraps
-from models.models import User
+from ..models.models import User
 
 load_dotenv()
 config = dotenv_values()

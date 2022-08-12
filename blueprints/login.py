@@ -1,6 +1,6 @@
 from flask import Blueprint, make_response, request
-from models.models import User
-from auth.auth import Token
+from ..models.models import User
+from ..auth.auth import Token
 from werkzeug.security import check_password_hash
 
 bp = Blueprint("login", __name__, url_prefix="/login")
